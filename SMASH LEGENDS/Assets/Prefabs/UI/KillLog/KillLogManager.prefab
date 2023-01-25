@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &536189675057161148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 536189675057161138}
+  - component: {fileID: 536189675057161139}
+  m_Layer: 0
+  m_Name: KillLogManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &536189675057161138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536189675057161148}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 988.7726, y: 733.62354, z: -90.4335}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &536189675057161139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536189675057161148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f229bb862e469a4d899a95c6ef48d0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerScript: []
+  ID: 0
+  MyTag: 
+  CharacterIamge:
+  - {fileID: 21300000, guid: 69f219207667cb64693fa7d5aa52c582, type: 3}
+  - {fileID: 21300000, guid: 6459341ce941274489eae6c7ea588778, type: 3}
+  - {fileID: 21300000, guid: cdb11830ecf80f64a932a9929bea5760, type: 3}
+  - {fileID: 21300000, guid: 1fc050d390446424095249d5ca165ed3, type: 3}
+  - {fileID: 21300000, guid: bec894df530cbb94d8c9aff2b5e7ae66, type: 3}
+  - {fileID: 21300000, guid: 889aae71b31ebe64aad847588adda430, type: 3}
+  KillLogBase: {fileID: 3804825497242406119, guid: bea0ffd2183e8524fa41cc05cce8627e,
+    type: 3}
+  MyKillLog: {fileID: 7365728159869691685, guid: 4c3ef5f8cd1985e49bd82cfe97897621,
+    type: 3}
+  MyDeadLog: {fileID: 337387548248227121, guid: e1980f4eff8f8c64f8b0d63fbd1d426b,
+    type: 3}
+  RightDeadLog: {fileID: 5574494463958719474, guid: 606878d1acea63249b116a640c4dff71,
+    type: 3}
+  LeftKillLog: {fileID: 7966612177660570614, guid: 9d4ff4ac0de31aa47a9d59af68a131c2,
+    type: 3}
+  KillLogBox: {fileID: 0}

@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/00. Login/00_1. Login_Scene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/01. Loading/01_0. Loading_Scene.unity
+    guid: cd84439562bec744cb3362414e6b27d0
+  - enabled: 1
+    path: Assets/Scenes/01. Loading/01_1. Matching_Scene.unity
+    guid: 32470b687a2532947b23773648de4ed4
+  - enabled: 1
+    path: Assets/Scenes/02. Lobby/02_0. MainLobby.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/02. Lobby/02_1. SelectCharacter_Scene.unity
+    guid: 152d28815ce20b346842811688ec8ab5
+  - enabled: 1
+    path: Assets/Scenes/02. Lobby/02_2. SelectMode_Scene.unity
+    guid: 762884a2108d98144b5ccbc23ca9c9f6
+  - enabled: 1
+    path: Assets/Scenes/03. Character_Info/03_0. Gangnim.unity
+    guid: 0b122ae3dc1f3414787aef8ed8b82b0e
+  - enabled: 1
+    path: Assets/Scenes/03. Character_Info/03_1. Chepesyu.unity
+    guid: b52eca03fe914de469949db5cac04451
+  - enabled: 1
+    path: Assets/Scenes/03. Character_Info/03_2. Penukeu.unity
+    guid: b99a9dd5ce60fb94c9f7485c1daa4f0c
+  - enabled: 1
+    path: Assets/Scenes/03. Character_Info/03_3. TrueLove.unity
+    guid: d140b8d49de163249958f394833be927
+  - enabled: 1
+    path: Assets/Scenes/03. Character_Info/03_4. Duseonin.unity
+    guid: 123d4b21e578925469784e15636b70ac
+  - enabled: 1
+    path: Assets/Scenes/03. Character_Info/03_5. Patal.unity
+    guid: 2cf57c2f3238d6b4db7d400828e5a8a8
+  - enabled: 1
+    path: Assets/Scenes/04. Game/04_0. DuelScene.unity
+    guid: ae0eb20ae2d56244e8304950df3dcb03
+  - enabled: 1
+    path: Assets/Scenes/04. Game/04_1. TeamTouchDownScene.unity
+    guid: bb32032061b0bc244912dd81b5d376b9
+  - enabled: 1
+    path: Assets/Scenes/04. Game/04_2. OccupationScene.unity
+    guid: ce800bb206bb4ec43b134ee8b081763f
+  - enabled: 1
+    path: Assets/Scenes/05. GameEnd/05_0. TeamVictoryScene.unity
+    guid: b0d8e2e70c567ed43ac3700c90f3e07d
+  - enabled: 1
+    path: Assets/Scenes/05. GameEnd/05_1. TeamLoseScene.unity
+    guid: 53f7af82d790acd47893b109f386cf80
+  m_configObjects: {}

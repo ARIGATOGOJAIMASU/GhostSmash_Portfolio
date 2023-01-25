@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: e205ee21188462a4c9a8d0c424dcc90d
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Hara_wing
+  - first:
+      1: 100004
+    second: Root_wing
+  - first:
+      1: 100006
+    second: w1
+  - first:
+      1: 100008
+    second: w10
+  - first:
+      1: 100010
+    second: w11
+  - first:
+      1: 100012
+    second: w12
+  - first:
+      1: 100014
+    second: w13
+  - first:
+      1: 100016
+    second: w14
+  - first:
+      1: 100018
+    second: w15
+  - first:
+      1: 100020
+    second: w16
+  - first:
+      1: 100022
+    second: w17
+  - first:
+      1: 100024
+    second: w18
+  - first:
+      1: 100026
+    second: w19
+  - first:
+      1: 100028
+    second: w2
+  - first:
+      1: 100030
+    second: w20
+  - first:
+      1: 100032
+    second: w21
+  - first:
+      1: 100034
+    second: w22
+  - first:
+      1: 100036
+    second: w23
+  - first:
+      1: 100038
+    second: w24
+  - first:
+      1: 100040
+    second: w25
+  - first:
+      1: 100042
+    second: w26
+  - first:
+      1: 100044
+    second: w27
+  - first:
+      1: 100046
+    second: w28
+  - first:
+      1: 100048
+    second: w29
+  - first:
+      1: 100050
+    second: w3
+  - first:
+      1: 100052
+    second: w30
+  - first:
+      1: 100054
+    second: w31
+  - first:
+      1: 100056
+    second: w32
+  - first:
+      1: 100058
+    second: w33
+  - first:
+      1: 100060
+    second: w34
+  - first:
+      1: 100062
+    second: w35
+  - first:
+      1: 100064
+    second: w36
+  - first:
+      1: 100066
+    second: w37
+  - first:
+      1: 100068
+    second: w38
+  - first:
+      1: 100070
+    second: w39
+  - first:
+      1: 100072
+    second: w7
+  - first:
+      1: 100074
+    second: w8
+  - first:
+      1: 100076
+    second: w9
+  - first:
+      1: 100078
+    second: wt4
+  - first:
+      1: 100080
+    second: wt5
+  - first:
+      1: 100082
+    second: wt6
+  - first:
+      1: 100084
+    second: wt7
+  - first:
+      1: 100086
+    second: wt8
+  - first:
+      1: 100088
+    second: wt9
+  - first:
+      4: 400000
+    second: Hara_wing
+  - first:
+      4: 400002
+    second: //RootNode
+  - first:
+      4: 400004
+    second: Root_wing
+  - first:
+      4: 400006
+    second: w1
+  - first:
+      4: 400008
+    second: w10
+  - first:
+      4: 400010
+    second: w11
+  - first:
+      4: 400012
+    second: w12
+  - first:
+      4: 400014
+    second: w13
+  - first:
+      4: 400016
+    second: w14
+  - first:
+      4: 400018
+    second: w15
+  - first:
+      4: 400020
+    second: w16
+  - first:
+      4: 400022
+    second: w17
+  - first:
+      4: 400024
+    second: w18
+  - first:
+      4: 400026
+    second: w19
+  - first:
+      4: 400028
+    second: w2
+  - first:
+      4: 400030
+    second: w20
+  - first:
+      4: 400032
+    second: w21
+  - first:
+      4: 400034
+    second: w22
+  - first:
+      4: 400036
+    second: w23
+  - first:
+      4: 400038
+    second: w24
+  - first:
+      4: 400040
+    second: w25
+  - first:
+      4: 400042
+    second: w26
+  - first:
+      4: 400044
+    second: w27
+  - first:
+      4: 400046
+    second: w28
+  - first:
+      4: 400048
+    second: w29
+  - first:
+      4: 400050
+    second: w3
+  - first:
+      4: 400052
+    second: w30
+  - first:
+      4: 400054
+    second: w31
+  - first:
+      4: 400056
+    second: w32
+  - first:
+      4: 400058
+    second: w33
+  - first:
+      4: 400060
+    second: w34
+  - first:
+      4: 400062
+    second: w35
+  - first:
+      4: 400064
+    second: w36
+  - first:
+      4: 400066
+    second: w37
+  - first:
+      4: 400068
+    second: w38
+  - first:
+      4: 400070
+    second: w39
+  - first:
+      4: 400072
+    second: w7
+  - first:
+      4: 400074
+    second: w8
+  - first:
+      4: 400076
+    second: w9
+  - first:
+      4: 400078
+    second: wt4
+  - first:
+      4: 400080
+    second: wt5
+  - first:
+      4: 400082
+    second: wt6
+  - first:
+      4: 400084
+    second: wt7
+  - first:
+      4: 400086
+    second: wt8
+  - first:
+      4: 400088
+    second: wt9
+  - first:
+      43: 4300000
+    second: Hara_wing
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Hara_wing
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 2
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 15
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Hara_wing(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hara_wing
+      parentName: Hara_wing(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root_wing
+      parentName: Hara_wing(Clone)
+      position: {x: 1.1832911e-33, y: 0.012856359, z: -0.00046544636}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: w1
+      parentName: Root_wing
+      position: {x: 0.00081218523, y: 0.00062774116, z: -0.00089955993}
+      rotation: {x: -0.11542788, y: 0.9930761, z: 0.021668104, w: -0.0026203769}
+      scale: {x: 1, y: 1, z: 1}
+    - name: w2
+      parentName: w1
+      position: {x: -0.002161649, y: 2.4980012e-19, z: 0.000458987}
+      rotation: {x: 4.1624357e-17, y: 4.492423e-17, z: -0.7318157, w: 0.6815026}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.9999999}
+    - name: w3
+      parentName: w2
+      position: {x: -0.0023393715, y: -6.812722e-19, z: -0.00022618132}
+      rotation: {x: -0.0133329965, y: 0.03882432, z: -0.029279262, w: 0.99872804}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000005}
+    - name: wt4
+      parentName: w3
+      position: {x: -0.0027147857, y: 8.067157e-20, z: -0.0011075817}
+      rotation: {x: 0.4910828, y: -0.8710316, z: -0.011755582, w: 0.0018938812}
+      scale: {x: 1, y: 1, z: 1.0000002}
+    - name: w16
+      parentName: wt4
+      position: {x: 0.00076554663, y: 0.00022766722, z: 0.000090437825}
+      rotation: {x: -0.08248053, y: 0.9965927, z: -2.3261581e-17, w: 1.9251853e-18}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000005}
+    - name: w17
+      parentName: w16
+      position: {x: -0.0032478506, y: -8.287782e-19, z: -0.00008330782}
+      rotation: {x: -0.031127293, y: -0.031795844, z: -0.26908162, w: 0.96208894}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: w18
+      parentName: w17
+      position: {x: -0.0052970126, y: -7.5850436e-18, z: 0.0005488428}
+      rotation: {x: -9.060055e-18, y: -8.590721e-18, z: 0.0914782, w: 0.99580705}
+      scale: {x: 1.0000004, y: 0.9999999, z: 1.0000005}
+    - name: w19
+      parentName: w18
+      position: {x: -0.0034097712, y: -2.3833902e-18, z: 0.0008616878}
+      rotation: {x: 1.05678894e-16, y: 5.8539153e-19, z: 0.15051234, w: 0.9886082}
+      scale: {x: 0.99999994, y: 1, z: 0.9999998}
+    - name: w20
+      parentName: w19
+      position: {x: -0.0015497693, y: -6.803335e-19, z: 0.00073221925}
+      rotation: {x: -3.51254e-17, y: 3.2806903e-17, z: 0.4607096, w: 0.8875509}
+      scale: {x: 1.0000006, y: 0.9999997, z: 1.0000002}
+    - name: w21
+      parentName: w20
+      position: {x: -0.0014082348, y: 1.8506067e-18, z: 0.0008702789}
+      rotation: {x: -0.633989, y: -0.77334213, z: -2.6588674e-17, w: 3.7325705e-17}
+      scale: {x: 0.9999998, y: 1, z: 0.9999998}
+    - name: w10
+      parentName: wt4
+      position: {x: 0.00065507554, y: -0.00008533406, z: 9.0852517e-20}
+      rotation: {x: 0.07338107, y: 0.99725693, z: -0.003053889, w: 0.009198856}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: w11
+      parentName: w10
+      position: {x: -0.002783843, y: -5.9189273e-18, z: 0.00065753184}
+      rotation: {x: 0.018015383, y: -0.114878215, z: 0.11507442, w: 0.9865274}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: w12
+      parentName: w11
+      position: {x: -0.0035226326, y: 4.4732418e-18, z: 0.0011386038}
+      rotation: {x: -0.06305948, y: -0.036880657, z: -0.072120816, w: 0.99471706}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1}
+    - name: w13
+      parentName: w12
+      position: {x: -0.0018301958, y: 5.4387287e-18, z: 0.0006709788}
+      rotation: {x: -7.754913e-17, y: 9.676858e-18, z: 0.29226422, w: 0.9563376}
+      scale: {x: 1.0000006, y: 1.0000001, z: 1}
+    - name: w14
+      parentName: w13
+      position: {x: -0.0014267687, y: -1.136236e-19, z: 0.0003104233}
+      rotation: {x: -0.9892293, y: 0.08690657, z: 0.096794926, w: -0.06710664}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1.0000002}
+    - name: w15
+      parentName: w14
+      position: {x: -0.0010905032, y: 1.3655041e-20, z: -0.00009518771}
+      rotation: {x: -2.3161054e-23, y: 5.7902637e-23, z: -0.6314248, w: 0.7754371}
+      scale: {x: 0.99999994, y: 0.9999998, z: 1}
+    - name: wt5
+      parentName: wt4
+      position: {x: 0.00032366242, y: -0.00036151163, z: -0.00012490498}
+      rotation: {x: 0.49760407, y: 0.86740434, z: -1.1317191e-17, w: -7.7084895e-17}
+      scale: {x: 1.0000002, y: 1, z: 0.9999998}
+    - name: wt6
+      parentName: wt5
+      position: {x: -0.002516771, y: 5.310756e-19, z: 0.0012052138}
+      rotation: {x: 0.1205602, y: 0.1258171, z: 0.8817551, w: 0.43834147}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: w7
+      parentName: wt6
+      position: {x: -0.0026504097, y: -4.7728905e-18, z: 0.0004624782}
+      rotation: {x: -0.987185, y: -0.12601961, z: 0.09706879, w: -0.012745299}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1}
+    - name: w8
+      parentName: w7
+      position: {x: -0.0014403659, y: 5.8881916e-19, z: 0.00010212629}
+      rotation: {x: 0.04012435, y: -0.1174319, z: -0.024906114, w: 0.99195737}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+    - name: w9
+      parentName: w8
+      position: {x: -0.0013302475, y: -2.4247826e-18, z: 0.0003427537}
+      rotation: {x: -5.381859e-23, y: 1.0507693e-23, z: -0.40965608, w: 0.91224}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: w22
+      parentName: Root_wing
+      position: {x: -0.00081218535, y: 0.00062773813, z: -0.0008995594}
+      rotation: {x: 0.018999346, y: 0.11047912, z: 0.7884254, w: -0.60482967}
+      scale: {x: 1, y: 1, z: 1}
+    - name: w23
+      parentName: w22
+      position: {x: 0.0021616453, y: 0.000000004886761, z: -0.00045899392}
+      rotation: {x: 0.123311326, y: 0.20350364, z: -0.056423794, w: 0.9696376}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: w24
+      parentName: w23
+      position: {x: 0.0023393813, y: 0.0000000020519653, z: 0.00022618497}
+      rotation: {x: 0.0969085, y: -0.22476877, z: -0.9542357, w: 0.17181979}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: wt7
+      parentName: w24
+      position: {x: 0.002714792, y: 0.000000006264612, z: 0.0011075847}
+      rotation: {x: 0.6954886, y: -0.71853715, z: 0.00000002225784, w: 0.000000023745956}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000007}
+    - name: w25
+      parentName: wt7
+      position: {x: -0.0007655398, y: -0.00022769996, z: -0.00009043799}
+      rotation: {x: -0.08248058, y: 0.9965927, z: 0.000000006623041, w: -5.4813665e-10}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1}
+    - name: w26
+      parentName: w25
+      position: {x: 0.0032478296, y: 0.000000091240864, z: 0.00008330699}
+      rotation: {x: 0.000000016599575, y: 7.938562e-10, z: 0.047769282, w: 0.99885845}
+      scale: {x: 1, y: 1, z: 1}
+    - name: w27
+      parentName: w26
+      position: {x: 0.0052970154, y: -0.000000013049232, z: -0.0005488424}
+      rotation: {x: 0.000000021129452, y: 0.0000000019410238, z: 0.09147813, w: 0.9958071}
+      scale: {x: 1.0000006, y: 1.0000005, z: 1}
+    - name: w28
+      parentName: w27
+      position: {x: 0.0034097908, y: -0.000000101628316, z: -0.0008616824}
+      rotation: {x: 0.000000036828506, y: 0.000000017514616, z: 0.15051241, w: 0.9886082}
+      scale: {x: 0.9999997, y: 0.99999994, z: 1}
+    - name: w29
+      parentName: w28
+      position: {x: 0.0015497521, y: 0.00000011394685, z: -0.00073222484}
+      rotation: {x: -0.00000006512823, y: -0.00000009969407, z: -0.4607096, w: -0.8875509}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1}
+    - name: w30
+      parentName: w29
+      position: {x: 0.0014082412, y: 0.000000029165228, z: -0.0008702848}
+      rotation: {x: 0.6339889, y: 0.7733421, z: -0.00000011118431, w: 0.000000092562985}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: w31
+      parentName: wt7
+      position: {x: -0.0006550648, y: 0.00008534998, z: 5.7109384e-13}
+      rotation: {x: 0.062956184, y: 0.99801636, z: 0.000000017167272, w: 0.0000000010829355}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.9999998}
+    - name: w32
+      parentName: w31
+      position: {x: 0.002783849, y: -0.000000025874844, z: -0.00065753236}
+      rotation: {x: 0.00000001942227, y: 0.0000000018260995, z: 0.093608, w: 0.9956092}
+      scale: {x: 0.9999998, y: 1, z: 1}
+    - name: w33
+      parentName: w32
+      position: {x: 0.0035226326, y: 0.0000000013196287, z: -0.0011385973}
+      rotation: {x: 0.000000016407649, y: 0.0000000026644167, z: 0.16028903, w: 0.98707014}
+      scale: {x: 1, y: 1.0000002, z: 1}
+    - name: w34
+      parentName: w33
+      position: {x: 0.0018301909, y: 0.0000000054018168, z: -0.00067097985}
+      rotation: {x: -0.000000025690538, y: -0.00000002098079, z: -0.29226428, w: -0.9563376}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: w35
+      parentName: w34
+      position: {x: 0.0014267797, y: 0.0000000015176687, z: -0.00031042495}
+      rotation: {x: 0.96294296, y: 0.2697053, z: -0.000000013052789, w: 0.000000049185786}
+      scale: {x: 0.9999996, y: 1.0000004, z: 1.0000005}
+    - name: w36
+      parentName: w35
+      position: {x: 0.0010905099, y: 0.000000008610481, z: 0.00009518997}
+      rotation: {x: 0.00000001551191, y: -0.00000001263107, z: -0.63142484, w: 0.7754372}
+      scale: {x: 0.9999998, y: 0.9999996, z: 0.9999997}
+    - name: wt8
+      parentName: wt7
+      position: {x: -0.00032365494, y: 0.00036149993, z: 0.00012490498}
+      rotation: {x: 0.497604, y: 0.86740434, z: 0.000000017292187, w: 0.0000000099200195}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1}
+    - name: wt9
+      parentName: wt8
+      position: {x: 0.0025167773, y: -0.0000000054427596, z: -0.0012052199}
+      rotation: {x: -0.000000024961286, y: -0.0000000041087356, z: -0.16241866, w: -0.986722}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1}
+    - name: w37
+      parentName: wt9
+      position: {x: 0.002650419, y: 0.0000000054119402, z: -0.00046247995}
+      rotation: {x: 0.9902427, y: 0.13935351, z: 0.0000000027673015, w: 0.000000019664393}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000005}
+    - name: w38
+      parentName: w37
+      position: {x: 0.0014403727, y: -0.0000000034488523, z: -0.000102134974}
+      rotation: {x: 0.000000016063407, y: -0.000000005411368, z: -0.31924722, w: 0.9476715}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000002}
+    - name: w39
+      parentName: w38
+      position: {x: 0.0013302525, y: 0.000000002485966, z: -0.00034274993}
+      rotation: {x: 0.000000013773049, y: -0.0000000061850116, z: -0.40965623, w: 0.91224}
+      scale: {x: 1, y: 1.0000005, z: 1.0000007}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.14999999
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 1
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
