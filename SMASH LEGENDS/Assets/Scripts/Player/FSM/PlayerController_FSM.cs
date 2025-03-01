@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 namespace Junpyo
 {
-    public class PlayerController_FSM : MonoBehaviourPunCallbacks , IPunObservable
+    public class PlayerController_FSM : MonoBehaviourPunCallbacks, IPunObservable
     {
         //Player Componenet
         [HideInInspector] public Rigidbody playerRigidbody;
@@ -47,7 +47,7 @@ namespace Junpyo
         //적팀 HP바 이미지
         [SerializeField] public Sprite Enemy_HP_Bar_Sprite;
 
-        //부활 UI
+        //플레이어 UI
         [HideInInspector] public GameObject PlayerUI;
         [HideInInspector] public Transform RevivalUI;
         [HideInInspector] public Image RevivalWaitingImage;
@@ -161,139 +161,139 @@ namespace Junpyo
                 IsUpdate = false;
             }
 
-            IsMine = false;
-
-            if (photonView.IsMine)
-            {
-                IsMine = true;
-
-                //Camera생성
-                GameObject Camera = GameObject.Instantiate(CameraManager);
-                Camera.name = "CameraManager";
-
-                //카메라타겟팅 지정
-                CameraTarget = GameObject.Find("CameraTarget").GetComponent<CameraTarget>();
-                CameraTarget.TagetObj = transform;
-
-                //LookChack생성
-                LookCheck = Instantiate<GameObject>(LookCheckFrefab, transform);
-
-                enemyCheck = transform.GetChild(5).GetComponent<EenemyCheck>();
-
-                //UI설정
-                PlayerUI = GameObject.Find("PlayerUI");
-                RevivalUI = PlayerUI.transform.GetChild(3);
-                RevivalWaitingImage = RevivalUI.GetChild(2).GetComponent<Image>();
-                dodge_UI = PlayerUI.transform.GetChild(4).GetComponent<Dodge_UI>();
-
-                //AttackSprite변경
-                PlayerUI.transform.GetChild(0).transform.GetChild(2).GetComponent<Image>().sprite = AttackSprite[0];
-
-                Skill_UI = PlayerUI.transform.GetChild(1).GetComponent<SkillUI>();
-                Skill_UI.transform.GetChild(2).GetComponent<Image>().sprite = AttackSprite[1];
-
-                Ultimate_UI = PlayerUI.transform.GetChild(2).GetComponent<UltimateUI>();
-                Ultimate_UI.MaxGage = playerInformation.UltGage_Max;
-                Ultimate_UI.transform.GetChild(2).GetComponent<Image>().sprite = AttackSprite[2];
-
-                //StateMachin 필요한 State들 할당
-                state_Machine = new State_Machine();
-                state_Machine._Owner = transform;
-
-                //기본 State들 StateMachine에 할당
-                state_Machine.StateAdd(new IdleState(), PLAYERSTATE.IDLE);
-                state_Machine.ChangeState(PLAYERSTATE.IDLE);
-                state_Machine.StateAdd(new RunState(), PLAYERSTATE.RUN);
-                state_Machine.StateAdd(new BaseAttackState(), PLAYERSTATE.BASEATTACK);
-                state_Machine.StateAdd(new JumpState(), PLAYERSTATE.JUMP);
-                state_Machine.StateAdd(new LandState(), PLAYERSTATE.LAND);
-                state_Machine.StateAdd(new HangState(), PLAYERSTATE.HANG);
-                state_Machine.StateAdd(new HangAttackPrepare(), PLAYERSTATE.HANGATTACKPREPARE);
-                state_Machine.StateAdd(new HangAttackState(), PLAYERSTATE.HANGATTACK);
-                state_Machine.StateAdd(new HurtState(), PLAYERSTATE.HURT);
-                state_Machine.StateAdd(new AirborneState(), PLAYERSTATE.AIRBORNE);
-                state_Machine.StateAdd(new AirState(), PLAYERSTATE.AIR);
-                state_Machine.StateAdd(new JumpAttackState(), PLAYERSTATE.JUMPATTACK);
-                state_Machine.StateAdd(new GroundDownState(), PLAYERSTATE.GROUNDDOWN);
-                state_Machine.StateAdd(new RollingState(), PLAYERSTATE.ROLLING);
-                state_Machine.StateAdd(new DeadHighlightState(), PLAYERSTATE.DEADHIGHLIGHT);
-                state_Machine.StateAdd(new DeadFlyState(), PLAYERSTATE.DEADFLY);
-                state_Machine.StateAdd(new DeadState(), PLAYERSTATE.DEAD);
-                state_Machine.StateAdd(new SmashState(), PLAYERSTATE.SMASH);
-                state_Machine.StateAdd(new SkillState(), PLAYERSTATE.SKILL);
-                state_Machine.StateAdd(new JumpSkillState(), PLAYERSTATE.JUMPSKILL);
-                state_Machine.StateAdd(new DodgeState(), PLAYERSTATE.DODGE);
-                state_Machine.StateAdd(new StunState(), PLAYERSTATE.STUN);
-                state_Machine.StateAdd(new CurceState(), PLAYERSTATE.CURCE);
-                state_Machine.StateAdd(new UltimateState(), PLAYERSTATE.ULTIMATE);
-                state_Machine.StateAdd(new DropState(), PLAYERSTATE.DROP);
-                state_Machine.StateAdd(new BounsHurtState(), PLAYERSTATE.BOUNSHURT);
-                state_Machine.StateAdd(new StandUpState(), PLAYERSTATE.STANDUP);
-                state_Machine.StateAdd(new StandUpAttackState(), PLAYERSTATE.STANDUPATTACK);
-                state_Machine.StateAdd(new DodgeAirState(), PLAYERSTATE.DODGEAIR);
-                state_Machine.StateAdd(new UseJumpStationState(), PLAYERSTATE.USE_JUMPSTATION);
-                state_Machine.StateAdd(new GetItemState(), PLAYERSTATE.GETITEM);
-                state_Machine.StateAdd(new ThrowState(), PLAYERSTATE.THROW);
-
-                //카메라 설정
-                CamManager = Camera.GetComponent<CameraManager>();
-                CamManager.target = CameraTarget.transform;
-                CamManager.transform.position = CamManager.transform.forward * -9.0f + transform.position;
-            }
-
             gameObject.name = photonView.ViewID.ToString();
+
+            // 내 캐릭터가 아닌경우
+            if (photonView.IsMine == false)
+                return;
+
+            IsMine = true;
+
+            //Camera생성
+            GameObject Camera = GameObject.Instantiate(CameraManager);
+            Camera.name = "CameraManager";
+
+            //카메라타겟팅 지정
+            CameraTarget = GameObject.Find("CameraTarget").GetComponent<CameraTarget>();
+            CameraTarget.TagetObj = transform;
+
+            //LookChack생성
+            LookCheck = Instantiate<GameObject>(LookCheckFrefab, transform);
+
+            enemyCheck = transform.GetChild(5).GetComponent<EenemyCheck>();
+
+            //UI설정
+            PlayerUI = GameObject.Find("PlayerUI");
+            RevivalUI = PlayerUI.transform.GetChild(3);
+            RevivalWaitingImage = RevivalUI.GetChild(2).GetComponent<Image>();
+            dodge_UI = PlayerUI.transform.GetChild(4).GetComponent<Dodge_UI>();
+
+            //AttackSprite변경
+            PlayerUI.transform.GetChild(0).transform.GetChild(2).GetComponent<Image>().sprite = AttackSprite[0];
+
+            Skill_UI = PlayerUI.transform.GetChild(1).GetComponent<SkillUI>();
+            Skill_UI.transform.GetChild(2).GetComponent<Image>().sprite = AttackSprite[1];
+
+            Ultimate_UI = PlayerUI.transform.GetChild(2).GetComponent<UltimateUI>();
+            Ultimate_UI.MaxGage = playerInformation.UltGage_Max;
+            Ultimate_UI.transform.GetChild(2).GetComponent<Image>().sprite = AttackSprite[2];
+
+            //StateMachin 필요한 State들 할당
+            state_Machine = new State_Machine();
+            state_Machine._Owner = transform;
+
+            //기본 State들 StateMachine에 할당
+            state_Machine.StateAdd(new IdleState(), PLAYERSTATE.IDLE);
+            state_Machine.StateAdd(new RunState(), PLAYERSTATE.RUN);
+            state_Machine.StateAdd(new BaseAttackState(), PLAYERSTATE.BASEATTACK);
+            state_Machine.StateAdd(new JumpState(), PLAYERSTATE.JUMP);
+            state_Machine.StateAdd(new LandState(), PLAYERSTATE.LAND);
+            state_Machine.StateAdd(new HangState(), PLAYERSTATE.HANG);
+            state_Machine.StateAdd(new HangAttackPrepare(), PLAYERSTATE.HANGATTACKPREPARE);
+            state_Machine.StateAdd(new HangAttackState(), PLAYERSTATE.HANGATTACK);
+            state_Machine.StateAdd(new HurtState(), PLAYERSTATE.HURT);
+            state_Machine.StateAdd(new AirborneState(), PLAYERSTATE.AIRBORNE);
+            state_Machine.StateAdd(new AirState(), PLAYERSTATE.AIR);
+            state_Machine.StateAdd(new JumpAttackState(), PLAYERSTATE.JUMPATTACK);
+            state_Machine.StateAdd(new GroundDownState(), PLAYERSTATE.GROUNDDOWN);
+            state_Machine.StateAdd(new RollingState(), PLAYERSTATE.ROLLING);
+            state_Machine.StateAdd(new DeadHighlightState(), PLAYERSTATE.DEADHIGHLIGHT);
+            state_Machine.StateAdd(new DeadFlyState(), PLAYERSTATE.DEADFLY);
+            state_Machine.StateAdd(new DeadState(), PLAYERSTATE.DEAD);
+            state_Machine.StateAdd(new SmashState(), PLAYERSTATE.SMASH);
+            state_Machine.StateAdd(new SkillState(), PLAYERSTATE.SKILL);
+            state_Machine.StateAdd(new JumpSkillState(), PLAYERSTATE.JUMPSKILL);
+            state_Machine.StateAdd(new DodgeState(), PLAYERSTATE.DODGE);
+            state_Machine.StateAdd(new StunState(), PLAYERSTATE.STUN);
+            state_Machine.StateAdd(new CurceState(), PLAYERSTATE.CURCE);
+            state_Machine.StateAdd(new UltimateState(), PLAYERSTATE.ULTIMATE);
+            state_Machine.StateAdd(new DropState(), PLAYERSTATE.DROP);
+            state_Machine.StateAdd(new BounsHurtState(), PLAYERSTATE.BOUNSHURT);
+            state_Machine.StateAdd(new StandUpState(), PLAYERSTATE.STANDUP);
+            state_Machine.StateAdd(new StandUpAttackState(), PLAYERSTATE.STANDUPATTACK);
+            state_Machine.StateAdd(new DodgeAirState(), PLAYERSTATE.DODGEAIR);
+            state_Machine.StateAdd(new UseJumpStationState(), PLAYERSTATE.USE_JUMPSTATION);
+            state_Machine.StateAdd(new GetItemState(), PLAYERSTATE.GETITEM);
+            state_Machine.StateAdd(new ThrowState(), PLAYERSTATE.THROW);
+
+            state_Machine.ChangeState(PLAYERSTATE.IDLE);
+
+            //카메라 설정
+            CamManager = Camera.GetComponent<CameraManager>();
+            CamManager.target = CameraTarget.transform;
+            CamManager.transform.position = CamManager.transform.forward * -9.0f + transform.position;
         }
 
         protected void Update()
         {
-            if (photonView.IsMine)
+            if (photonView.IsMine == false)
+                return;
+
+            if (IsUpdate)
             {
-                if (IsUpdate)
+                //현재 자신의 State를 확인하는 용도
+                CUrState = state_Machine._CurState;
+
+                //아이템 상호작용
+                if (ItemTrigger && 
+                    Input.GetKeyDown(KeyCode.Z))
                 {
-                    //현재 자신의 State를 확인하는 용도
-                    CUrState = state_Machine._CurState;
-
-                    //아이템 상호작용
-                    if (ItemTrigger && 
-                        Input.GetKeyDown(KeyCode.Z))
+                    if (((state_Machine._CurState == PLAYERSTATE.IDLE) ||
+                    (state_Machine._CurState == PLAYERSTATE.RUN)))
                     {
-                        if (((state_Machine._CurState == PLAYERSTATE.IDLE) ||
-                        (state_Machine._CurState == PLAYERSTATE.RUN)))
-                        {
-                            ItemTrigger = false;
-                            Juhyung.ItemManager.Instance.s_PlayerNum = this;
-                            state_Machine.ChangeState(PLAYERSTATE.GETITEM);
-                        }
+                        ItemTrigger = false;
+                        Juhyung.ItemManager.Instance.s_PlayerNum = this;
+                        state_Machine.ChangeState(PLAYERSTATE.GETITEM);
+                    }
+                }
+
+                state_Machine.Update();
+
+                //회피기
+                if (Input.GetKeyDown(KeyCode.LeftShift) &&
+                    (state_Machine._CurState != PLAYERSTATE.ULTIMATE) &&
+                    (state_Machine._CurState != PLAYERSTATE.ULTIMATEPREPARE))
+                {
+                    //행동 초기화 후 모든 딜레이 체크시작
+                    ReSet();
+                    StartCoroutine(DodgeDelay());
+
+                    //사용중인 스킬 캔슬
+                    if ((state_Machine._CurState == PLAYERSTATE.SKILL) && playerInformation.SkillCansle)
+                    {
+                        GameManager.Instance.Attack((int)SKILLTYPE.SKILL, false, ID);
+                    }
+                    else if (((state_Machine._CurState == PLAYERSTATE.JUMPSKILL) || (state_Machine._CurState == PLAYERSTATE.GANGNIM_JUMPSKILLSTATE))
+                        && playerInformation.JumpSkillCansle)
+                    {
+                        GameManager.Instance.Attack((int)SKILLTYPE.CURSKILL, false, ID);
+                    }
+                    else if ((state_Machine._CurState == PLAYERSTATE.BASEATTACK))
+                    {
+                        GameManager.Instance.Attack((int)SKILLTYPE.CURSKILL, false, ID);
                     }
 
-                    state_Machine.Update();
-
-                    //회피기
-                    if (Input.GetKeyDown(KeyCode.LeftShift) && 
-                        (state_Machine._CurState != PLAYERSTATE.ULTIMATE) &&
-                        (state_Machine._CurState != PLAYERSTATE.ULTIMATEPREPARE))
-                    {
-                        //행동 초기화 후 모든 딜레이 체크시작
-                        ReSet();
-                        StartCoroutine(DodgeDelay());
-
-                        //사용중인 스킬 캔슬
-                        if ((state_Machine._CurState == PLAYERSTATE.SKILL) && playerInformation.SkillCansle)
-                        {
-                            GameManager.Instance.Attack((int)SKILLTYPE.SKILL, false, ID);
-                        }
-                        else if (((state_Machine._CurState == PLAYERSTATE.JUMPSKILL) || (state_Machine._CurState == PLAYERSTATE.GANGNIM_JUMPSKILLSTATE))
-                            && playerInformation.JumpSkillCansle)
-                        {
-                            GameManager.Instance.Attack((int)SKILLTYPE.CURSKILL, false, ID);
-                        }
-                        else if ((state_Machine._CurState == PLAYERSTATE.BASEATTACK))
-                        {
-                            GameManager.Instance.Attack((int)SKILLTYPE.CURSKILL, false, ID);
-                        }
-
-                        state_Machine.ChangeState(PLAYERSTATE.DODGE);
-                    }
+                    state_Machine.ChangeState(PLAYERSTATE.DODGE);
                 }
 
                 //State확인 용으로 만든 코드

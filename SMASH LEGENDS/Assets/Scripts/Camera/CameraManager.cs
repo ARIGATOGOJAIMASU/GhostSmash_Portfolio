@@ -9,7 +9,6 @@ namespace Junpyo
         private static CameraManager m_Instance;
         public static CameraManager Instance()
         {
-
             if (m_Instance == null)
             {
                 m_Instance = GameObject.Find("CameraManager").GetComponent<CameraManager>();
